@@ -47,6 +47,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center; /* Centraliza os flashcards horizontalmente */
 }
 
 /* Estilo de cada flashcard individual */
@@ -73,7 +74,35 @@ main {
     color: white;
 }
 
-.flashcard .delete-btn {
+flashcard .delete-btn {
     background-color: #f44336;
     color: white;
+}
+
+/* Centraliza o formulário e os campos de busca */
+.centered-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered-form h2 {
+    text-align: center;
+}
+
+.centered-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered-form .search-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.centered-form .search-fields div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
