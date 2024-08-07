@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Flashcards</h1>
+        <nav>
+            <button onclick="showSection('create')">Criar Flashcard</button>
+            <button onclick="showSection('study')">Revisar Flashcards</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="create" class="hidden">
+            <h2>Criar Flashcard</h2>
+            <form id="flashcardForm">
+                <label for="category">Categoria:</label>
+                <textarea type="text" id="category" name="category" required></textarea>
+                
+                <label for="question">Pergunta:</label>
+                <textarea type="text" id="question" name="question" required></textarea>
+                
+                <label for="answer">Resposta:</label>
+                <textarea type="text" id="answer" name="answer" required></textarea>
+                
+                <button type="submit">Adicionar Flashcard</button>
+            </form>
+        </section>
+        
+        <section id="study" class="hidden">
+            <h2>Revisar Flashcards</h2>
+            <form id="searchForm">
+                <label for="searchCategory">Categoria:</label>
+                <input type="text" id="searchCategory" name="searchCategory">
+                
+                <label for="searchTerm">Palavra-chave:</label>
+                <input type="text" id="searchTerm" name="searchTerm">
+                
+                <button type="submit">Buscar</button>
+            </form>
+            <div id="flashcardsContainer"></div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
