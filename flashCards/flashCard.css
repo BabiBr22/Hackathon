@@ -126,3 +126,28 @@ button:hover {
     background-color: #45a049;
 }
 
+
+#searchCategory{
+    width: 130px;  
+    height: 10px;  
+}
+
+#searchTerm{
+    width: 130px;  
+    height: 10px;  
+}
+
+#category{
+    width: 130px;  
+    height: 10px;  
+}
+
+#question{
+    width: 130px;  
+    height: 10px; 
+}
+
+#answer{
+    width: 130px;  
+    height: 10px; 
+}
