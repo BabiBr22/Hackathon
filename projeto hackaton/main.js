@@ -25,7 +25,7 @@ function verificaRegistro(){
             }else{
                 registrar(verificaEmail, verificaSenha)
                 alert(`O email ${verificaEmail} foi cadastrado com sucesso!`)
-                window.location.href = "login.html"
+                window.location.href = "./projeto hackaton/login.html"
             } 
         }
     }else{
@@ -52,7 +52,7 @@ function registrar(emailUsuario, senhaUsuario) {
 }
 
 function login(){
-    window.location.href = "login.html"
+    window.location.href = "./projeto hackaton/login.html"
 }
 
 function verificarLogin() {
@@ -243,7 +243,7 @@ function mudarBio(){
 function sair(){
     localStorage.removeItem("usuarioLogado") // Remove o nome do usuário logado do Local Storage
     alert("Você saiu da sua conta com sucesso!")
-    window.location = "login.html"
+    window.location = "./projeto hackaton/login.html"
 }
 
 
@@ -309,6 +309,6 @@ function verificaPerfil(){
     if(log){
         window.location.href = "perfil.html"
     }else{
-        window.location.href = "login.html"
+        window.location.href = "./projeto hackaton/login.html"
     }
 }
