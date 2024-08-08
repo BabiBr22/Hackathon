@@ -3,7 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #2e2e2e; /* Fundo cinza escuro */
+    color: #f5f5f5; /* Texto em cor clara */
 }
 
 /* Estilo do cabeçalho */
@@ -52,12 +53,13 @@ main {
 
 /* Estilo de cada flashcard individual */
 .flashcard {
-    background-color: white;
-    border: 1px solid #ccc;
+    background-color: #3a3a3a; /* Fundo dos flashcards */
+    border: 1px solid #555; /* Cor da borda dos flashcards */
     border-radius: 5px;
     padding: 10px;
     width: 200px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #f5f5f5; /* Texto dos flashcards em cor clara */
     word-wrap: break-word;
 }
 
@@ -67,16 +69,15 @@ main {
     padding: 5px 10px;
     border: none;
     cursor: pointer;
+    color: white;
 }
 
 .flashcard .edit-btn {
     background-color: #ff9800;
-    color: white;
 }
 
-flashcard .delete-btn {
+.flashcard .delete-btn {
     background-color: #f44336;
-    color: white;
 }
 
 /* Centraliza o formulário e os campos de busca */
@@ -105,4 +106,22 @@ flashcard .delete-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #666; /* Cor da borda dos campos de texto */
+    background-color: #444; /* Fundo dos campos de texto */
+    color: #f5f5f5; /* Texto dos campos de texto em cor clara */
+}
+
+button {
+    background-color: #4CAF50; /* Cor de fundo dos botões */
+    color: white; /* Cor do texto dos botões */
+}
+
+button:hover {
+    background-color: #45a049;
 }
