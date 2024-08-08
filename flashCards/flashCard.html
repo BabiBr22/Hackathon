@@ -1,5 +1,7 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,39 +16,51 @@
             <button onclick="showSection('study')">Revisar Flashcards</button>
         </nav>
     </header>
-    
+
     <main>
         <section id="create" class="hidden">
             <h2>Criar Flashcard</h2>
             <form id="flashcardForm">
                 <label for="category">Categoria:</label>
-                <textarea type="text" id="category" name="category" required></textarea>
-                
+                <input type="text" id="category" name="category" required>
+
                 <label for="question">Pergunta:</label>
-                <textarea type="text" id="question" name="question" required></textarea>
-                
+                <input type="text" id="question" name="question" required>
+
                 <label for="answer">Resposta:</label>
-                <textarea type="text" id="answer" name="answer" required></textarea>
-                
+                <input type="text" id="answer" name="answer" required>
+
                 <button type="submit">Adicionar Flashcard</button>
             </form>
         </section>
-        
+
         <section id="study" class="hidden">
             <h2>Revisar Flashcards</h2>
             <form id="searchForm">
                 <label for="searchCategory">Categoria:</label>
                 <input type="text" id="searchCategory" name="searchCategory">
-                
+
                 <label for="searchTerm">Palavra-chave:</label>
                 <input type="text" id="searchTerm" name="searchTerm">
-                
+
                 <button type="submit">Buscar</button>
             </form>
+            <button id="reviewButton" class="hidden" onclick="startReview()">Revisar</button>
             <div id="flashcardsContainer"></div>
         </section>
+
+        <section id="reviewContainer" class="hidden">
+            <h2>Revisão</h2>
+            <div id="reviewFlashcard">
+                <p class="question"></p>
+                <button id="showAnswerButton">Mostrar Resposta</button>
+                <p class="answer hidden"></p>
+                <button id="nextButton">Próximo</button>
+                <button id="closeReview">Fechar</button>
+            </div>
+        </section>
     </main>
-    
+
     <script src="flashcard.js"></script>
 </body>
 </html>
