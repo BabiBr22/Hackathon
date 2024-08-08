@@ -155,9 +155,3 @@ button:hover {
 .hidden {
     display: none;
 }
-
-main{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
