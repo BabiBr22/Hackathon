@@ -145,3 +145,22 @@ function shuffleArray(array) {
     }
 }
 
+function editFlashcard(index) {
+    const flashcards = JSON.parse(localStorage.getItem('flashcards')) || [];
+    const flashcard = flashcards[index];
+
+    document.getElementById('category').value = flashcard.category;
+    document.getElementById('question').value = flashcard.question;
+    document.getElementById('answer').value = flashcard.answer;
+
+    editingIndex = index;
+    showSection('create');
+}
+
+function deleteFlashcard(index) {
+    const flashcards = JSON.parse(localStorage.getItem('flashcards')) || [];
+    flashcards.splice(index, 1);
+    localStorage.setItem('flashcards', JSON.stringify(flashcards));
+
+    displayFlashcards(); // Atualiza a lista de flashcards
+}
