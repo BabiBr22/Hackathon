@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="ico/silh.ico" type="image/x-icon">
+        <title>Login</title>
+        <script src="main.js" defer></script>
+        <link rel="stylesheet" href="style.css"> 
+       
+
+    </head>
+    <body>
+        
+        <header class="navBar">
+           
+        </header>
+        
+            <section class="caixaEntrada">
+                
+                <div class="loginBox">
+                    <div>
+                        <h2 id="h2css">Login</h2>
+                        
+                        <div class="entrada1">
+                            <ion-icon name="mail-outline" id="icone"></ion-icon>
+                            <input type="email" id="mail" placeholder="E-mail" autocomplete="off">
+                        </div>
+
+                        <div class="entrada">
+                            <ion-icon name="lock-closed-outline" onclick="mostraLogin()" id="icone"></ion-icon>
+                            <input type="password"  id="pass" placeholder="Senha" autocomplete="off">
+                        </div>
+
+                        <button onclick="mostraLogin()" class="btnMostra">Mostrar Senha</button>
+                        <p id="respLogin"></p> 
+                        <button onclick="verificarLogin()" id="entre" class="btnEntra"><b>ENTRAR</b></button>
+                        <button onclick="registro()" id="entre" class="btnCadastra"><b>CADASTRE-SE</b></button><br>
+
+                        <div class="line"></div>
+                            <div style="display: inline-block;" class="inline">OU</div>
+                        <div class="line"></div>
+                        <br>
+                        <button class="esqueceu" onclick="recuperaSenha()"><b>ESQUECEU A SENHA?</b></button>
+                        <br>
+                    </div>
+                </div>
+            </section>
+
+        
+        
+        <footer id="rodape">
+
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   </body>
+</html>

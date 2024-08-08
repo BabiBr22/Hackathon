@@ -1,0 +1,158 @@
+body{
+    background-color:rgb(27, 27, 27);
+    padding-top: 8%;
+    margin-left: 0px;
+    padding-bottom: 10%;
+}
+
+.loginBox{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: solid;
+    border-radius: 5px;
+    max-width: 50vh;
+    margin: 12px;
+    padding: 12px;
+    min-width: 50vh;
+    min-height: 25vw;
+    background-color: rgb(48, 46, 47);
+    line-height: 35px;
+    padding-bottom: 30px;
+ }
+
+.entrada{
+    line-height: 75px;
+}
+
+.caixaEntrada{
+    display: flex;
+    justify-content: center;
+}
+
+.btnEntra{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(28, 240, 0);
+    padding: 12px;
+    border-radius: 10px;
+    min-width: 130px;
+}
+
+.btnEntra:hover{
+    background-color: rgb(59, 228, 124);
+    transition: 0.45s;
+}
+
+.btnCadastra{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-width: 130px;
+    background-color: rgb(255, 255, 255);;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.btnCadastra:hover{
+    background-color: gray;
+    transition: 0.45s;
+}
+
+.btnMostra{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    border-radius: 670px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.esqueceu:hover{
+    background-color: gray;
+    transition: 0.45s;
+}
+
+.esqueceu{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);;
+    color: #000000;
+    padding: 12px;
+    border-radius: 10px;
+    min-width: 130px;
+}
+
+ input{
+    color: #ffffff;
+    background-color: #323b47;;
+    border: 2px solid; border-radius: 10px; border-width: 1px;
+    width: 70%;
+    height: 35px;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+
+.line{
+    width: 30%;
+    border: 1px solid #ffffff;
+    margin: 3px;
+    display:inline-block;
+}
+
+.inline{
+    font-size: larger;
+    color: #ffffff;
+    padding: 25px;
+}
+
+#h2css{
+    color: white;
+    font-size: 50px;
+}
+
+#respLogin{
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: auto;
+    word-wrap: break-word;
+}
+
+::placeholder{
+    text-align: left;
+    font-size: larger;
+    color: #ffffff;
+}
+
+#icone{
+    vertical-align: middle;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+footer{
+    background-color: rgb(63, 63, 63);
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 100000;
+    width: 100%;
+    background-color: rgb(63, 63, 63);
+    padding: 20px;
+}
+
+#aviso{
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: auto;
+    word-wrap: break-word;
+}

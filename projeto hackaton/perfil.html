@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="nomeTitulo">Perfil de [Seu Nome]</title>
+    <link rel="stylesheet" href="stylePerfil.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="top">
+        <h1 id="nomePrincipal">Perfil de [Seu Nome]</h1>
+        <a href="index.html" id="home"><ion-icon name="home-outline" id="casinha"></ion-icon></a>
+    </header>
+
+    <div class="container">
+        <section class="profile-info">
+            <label class="picture" tabindex="0" >
+                
+                <label class="picture" for="picture__input" tabIndex="0">
+                    <span class="picture__image"><img id="imgPerfil" alt="Imagem do Perfil" hidden></span>
+                    
+                  </label>
+                  
+                  <input type="file" name="picture__input" id="picture__input" accept="image/*" >
+                </label>
+
+            <div class="nomeUsuario">
+                <h2 id="nomePerfil">[Seu Nome]</h2>
+                <ion-icon name="pencil-sharp" onclick="mudarNome()"></ion-icon>
+                <ion-icon id="saida" name="exit-outline" onclick="sair()"></ion-icon>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3 class="destaques">Sobre Mim</h3>
+            <p id="descricao">[Conte um pouco mais sobre você, seus interesses, e suas experiências]</p>
+            <ion-icon name="pencil-sharp" onclick="mudarBio()"></ion-icon>
+        </section>
+
+        <section class="section">
+            <h3 class="destaques">Historico de pontuação</h3>
+            <ul>
+                <li><b class="destaques">Jogo da Memória:</b> <span id="pontosMemoria">0 partidas ganhas</span></li>
+                <li><b class="destaques">Jogo Genius:</b> <span id="pontosGenius">0 partidas ganhas</span></li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h3 class="destaques">Contato</h3>
+            <ul class="contact-info">
+                <li>Email: <a href="mailto:[seuemail@example.com]" id="emailPerfil">[seuemail@example.com]</a><ion-icon name="pencil-sharp" onclick="mudarEmail()"></ion-icon></li>
+                <li>Telefone: <span id="telefone">[Seu número de telefone]</span> <ion-icon name="pencil-sharp" onclick="mudarTel()"></ion-icon></li>
+                <li>Instagram: <a id="insta" href="[Seu Instagram]" target="_blank">[Seu LinkedIn]</a><ion-icon name="pencil-sharp" onclick="mudarInsta()"></ion-icon></li>
+                <li>Twitter: <a id="x" href="[Seu Twitter]" target="_blank">[Seu Twitter]</a><ion-icon name="pencil-sharp" onclick="mudarX()"></ion-icon></li>
+            </ul>
+        </section>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

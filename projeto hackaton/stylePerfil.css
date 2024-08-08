@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background-color:rgb(27, 27, 27)
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #00ff00 2px solid;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+.profile-info {
+    color: white;
+    border: 2px solid #00ff00;
+    display: flex;
+    align-items: center;
+    background: #292828;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.profile-info img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+.profile-info h2 {
+    margin: 0;
+}
+.section {
+    color: white;
+    /* border: 3px solid #00ff00; */
+    background: #292828;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    word-wrap: break-word;
+}
+.section h3 {
+    margin-top: 0;
+}
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+.contact-info li {
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+#picture__input {
+    display: none;
+  }
+  
+  .picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 82px;
+    background-image: url(150.png);
+    display: block;
+    cursor: pointer;
+    
+  }
+  
+  .picture__img {
+    max-width: 100%;
+  }
+
+  .nomeUsuario{
+    word-wrap: break-word;
+    margin-left: 12px;
+    display: flex;
+    gap: 12px;
+  }
+
+  ion-icon{
+    vertical-align: middle;
+    font-size: x-large;
+  }
+
+  .destaques{
+    color: green;
+  }
+
+  #emailPerfil{
+    text-decoration: none;
+    color: #f4f4f4;
+  }
+
+  #insta{
+    text-decoration: none;
+    color: #f4f4f4;
+  }
+
+  #tel{
+    text-decoration: none;
+    color: #f4f4f4;
+  }
+
+  #x{
+    text-decoration: none;
+    color: #f4f4f4;
+  }
+
+  #home{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 45px;
+    margin-top: -35px;
+  }
+
+  #casinha{
+    font-size: xx-large;
+  }
+
